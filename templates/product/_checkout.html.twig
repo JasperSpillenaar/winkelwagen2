@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            {{ form_start(form) }}
+            {{ form_label(form.Name) }}
+            {{ form_widget(form.Name, { 'attr': {'class': 'form-control'} }) }}
+            <br>
+            {{ form_label(form.Email) }}
+            {{ form_widget(form.Email, { 'attr': {'class': 'form-control'} }) }}
+            <br>
+            <button class="btn btn-primary">{{ button_label|default('Save') }}</button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+</div>
