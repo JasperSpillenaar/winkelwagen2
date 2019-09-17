@@ -151,7 +151,7 @@ class ProductController extends AbstractController
             $message = (new Swift_Message('Factuur'))
                 ->setFrom('jspillenaar@gmail.com')
                 ->setTo('jspillenaar@gmail.com')
-                ->setBody('Welcome to Maitrap!</p>Now your test emails will be <i>safe</i> ' .  . $Cart['name'],  'text/html');
+                ->setBody('Welcome to Maitrap!</p>Now your test emails will be <i>safe</i> ' .  'text/html');
             $mailer->send($message);
             $this->session->clear();
             return $this->redirect('/');
